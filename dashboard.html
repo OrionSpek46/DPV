@@ -1,0 +1,20 @@
+<!-- templates/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Data Pipeline Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <div id="graph"></div>
+        <script>
+            var graphData = {{ graph_json|safe }};
+            Plotly.newPlot('graph', graphData.data, graphData.layout);
+        </script>
+    </div>
+</body>
+</html>
