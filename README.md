@@ -13,7 +13,7 @@ Web Dashboard: Provides an interactive web dashboard using Flask and Plotly for 
 User Authentication: Implements user login and registration for dashboard access.
 RESTful API: Exposes a RESTful API for external applications to interact with the data.
 
-Technologies Used:
+Technologies Used: also in requirement.txt
 
 Technologies Used
 Python 3.8+
@@ -24,3 +24,5 @@ SQLAlchemy
 SQLite
 Requests
 JWT (JSON Web Tokens)
+
+
